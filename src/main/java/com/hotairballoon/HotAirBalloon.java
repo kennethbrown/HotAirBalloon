@@ -6,7 +6,8 @@ public class HotAirBalloon {
 	
 	public static void main(String[] args) throws Exception {
 		TwitterClient client = new TwitterClient();
-		client.teapot();
+		
+		System.out.println(client.search("@BernieSanders"));
 	}
 
 }
