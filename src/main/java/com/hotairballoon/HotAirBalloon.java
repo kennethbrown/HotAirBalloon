@@ -1,9 +1,12 @@
 package com.hotairballoon;
 
+import com.hotairballoon.twitter.client.TwitterClient;
+
 public class HotAirBalloon {
 	
-	public static void main(String[] args) {
-		System.out.println("Hello world!");
+	public static void main(String[] args) throws Exception {
+		TwitterClient client = new TwitterClient();
+		client.teapot();
 	}
 
 }
